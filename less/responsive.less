@@ -1,0 +1,36 @@
+@import url('main.css');
+
+@media (max-width: 1024px) {
+  section, header {
+    width: 80%;
+    float: none;
+
+    &.derek {
+        min-height: 16em;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+    body {
+        padding: 0.7em;
+        background-size: auto;
+        background-position: top center;
+    }
+
+    section, header {
+        width: inherit;
+        margin-right: 0;
+        height: inherit;
+
+        &.derek {
+            min-height: 6em;
+        }
+
+        & .contact-info a {
+            font-size: 73%;
+            display: inline-block;
+            margin-bottom: 0;
+        }
+    }
+}
