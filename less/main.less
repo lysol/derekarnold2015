@@ -1,5 +1,7 @@
-@green: #04AA7C;
+@green: #04AA9C;
 @lightGreen: #34CAAC;
+@introColor: rgba(64, 64, 64, 0.8);
+@shadowColor: rgba(0,0,0,0.80);
 @sectionBackground: rgba(255, 255, 255, 0.9);
 
 body {
@@ -19,7 +21,6 @@ body {
 
 a, a:active, a:visited {
   color: @green;
-  font-weight: bold;
 }
 
 a:hover {
@@ -30,19 +31,24 @@ header, section {
   z-index: 100;
   font-size: 13pt;
   margin: 0 2em 2em 0;
-  padding: 2em 1.5em 2em 2em;
+  padding: 2em 2em 2em 2em;
   background-color: @sectionBackground;
   color: #000;
   width: 25%;
-  height: 10em;
+  height: 11em;
   float: left;
-  -webkit-box-shadow: 0px 0px 31px -9px rgba(0,0,0,0.80);
-  -moz-box-shadow: 0px 0px 31px -9px rgba(0,0,0,0.80);
-  box-shadow: 0px 0px 31px -9px rgba(0,0,0,0.80);
+  -webkit-box-shadow: 0px 0px 31px -9px @shadowColor;
+  -moz-box-shadow: 0px 0px 31px -9px @shadowColor;
+  box-shadow: 0px 0px 31px -9px @shadowColor;
 
   &.derek {
     background-image: url('../images/derek.jpg');
     background-size: cover;
+  }
+
+  &.intro, &.outro {
+    color: #FFF;
+    background-color: @introColor;
   }
 }
 

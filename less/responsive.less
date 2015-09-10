@@ -4,6 +4,7 @@
   section, header {
     width: 80%;
     float: none;
+    height: inherit;
 
     &.derek {
         min-height: 16em;
@@ -14,8 +15,7 @@
 @media (max-width: 680px) {
     body {
         padding: 0.7em;
-        background-size: auto;
-        background-position: top center;
+        background-size: cover;
     }
 
     section, header {
@@ -24,13 +24,7 @@
         height: inherit;
 
         &.derek {
-            min-height: 14em;
-        }
-
-        & .contact-info a {
-            font-size: 73%;
-            display: inline-block;
-            margin-bottom: 0;
+            min-height: 13em;
         }
     }
 }
